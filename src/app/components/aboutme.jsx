@@ -54,7 +54,7 @@ const AboutMe = ({ isDark }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl">
-            I am an experienced Frontend Developer with over a 5years of
+            I am an experienced Frontend Developer with over a 3years of
             professional expertise in the field. Throughout my career, I have
             had the privilege of collaborating with prestigious organizations,
             contributing to their success and growth.
@@ -77,10 +77,7 @@ const AboutMe = ({ isDark }) => {
                   className="w-7 mt-3"
                 />
 
-                <h3
-                  i
-                  className="my-4 font-semibold text-gray-700 dark:text-white/80"
-                >
+                <h3 className="my-4 font-semibold text-gray-700 dark:text-white/80">
                   {title}
                 </h3>
                 <p className="text-gray-600 text-sm dark:text-white/80">

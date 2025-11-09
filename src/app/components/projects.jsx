@@ -51,18 +51,20 @@ const Projects = ({ isDark }) => {
             transition={{ duration: 0.3 }}
             whileHover={{ scale: 1.05 }}
             key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `${project.bgImage}` }}
+            className="aspect-square bg-no-repeat bg-contain bg-center rounded-lg relative cursor-pointer group"
+            style={{ backgroundImage: `url(${project.bgImage.src})` }}
           >
-            <div className="bg-blue-50 w-10/12 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 flex items-center justify-between rounded-md px-5 duration-500 group-hover:bottom-7 dark:text-gray-700">
-              <div>
-                <h4 className="font-semibold">{project.title}</h4>
-                <p className="text-sm text-gray-700">{project.description}</p>
+            <Link href={project.href} target="_blank">
+              <div className="bg-blue-50 w-11/12 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 flex items-center justify-between rounded-md px-5 duration-500 group-hover:bottom-7 dark:text-gray-700">
+                <div>
+                  <h4 className="font-semibold">{project.title}</h4>
+                  <p className="text-sm text-gray-700">{project.description}</p>
+                </div>
+                <div className="border w-7 rounded-full border-black aspect-square flex items-center justify-center group-hover:bg-blue-300 transition">
+                  <Image src={assets.send_icon} className="w-4 " alt="" />
+                </div>
               </div>
-              <div className="border w-7 rounded-full border-black aspect-square flex items-center justify-center group-hover:bg-blue-300 transition">
-                <Image src={assets.send_icon} className="w-4 " alt="" />
-              </div>
-            </div>
+            </Link>
           </motion.div>
         ))}
       </motion.div>

@@ -45,12 +45,12 @@ const Header = ({ isDark }) => {
           multiple establishments.
         </motion.p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-          <motion.Link
+          <motion.a
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1 }}
             href="#contact"
-            className={`px-10 py-3 border bg-black text-white rounded-full border-gray-500 flex items-center gap-2`}
+            className={`px-10 py-3 border bg-black text-white rounded-full border-gray-500 flex items-center gap-2 cursor-pointer`}
           >
             Contact Me{" "}
             <Image
@@ -58,18 +58,18 @@ const Header = ({ isDark }) => {
               alt=""
               className="w-4"
             />{" "}
-          </motion.Link>
-          <motion.Link
+          </motion.a>
+          <motion.a
             href="/sample-resume.pdf"
             download
-            className="px-10 py-3 dark:bg-white dark:text-black border rounded-full border-gray-500 flex items-center gap-2"
+            className="px-10 py-3 dark:bg-white dark:text-black border rounded-full border-gray-500 flex items-center gap-2 cursor-pointer"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
           >
             My Resume{" "}
             <Image src={assets.download_icon} alt="" className="w-4" />{" "}
-          </motion.Link>
+          </motion.a>
         </div>
       </div>
     </div>

@@ -35,7 +35,10 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
-// import d_cribs from "./d-cribs.png";
+import konjaa from "../assets/konjaa.png";
+import luxedrive from "../assets/luxedrive.png";
+import dcribs from "../assets/dcribs.png";
+import foods from "../assets/foods.png";
 
 export const assets = {
   user_image,
@@ -75,28 +78,36 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  konjaa,
+  luxedrive,
+  dcribs,
+  foods,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
+    title: "Car Rental",
     description: "Web Design",
-    bgImage: "/work-1.png",
+    bgImage: assets.luxedrive,
+    href: "https://car-rentalv2.vercel.app/",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
-  },
-  {
-    title: "Photography site",
+    title: "D-cribs Real Estate",
     description: "Web Design",
-    bgImage: "/work-3.png",
+    bgImage: assets.dcribs,
+    href: "https://m-d-cribs.vercel.app/",
   },
   {
-    title: "UI/UX designing",
+    title: "Konjaa POS",
+    description: "Web Design",
+    bgImage: assets.konjaa,
+    href: "https://konjaa.vercel.app/",
+  },
+  {
+    title: "Food App",
     description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    bgImage: assets.foods,
+    href: "https://foodies-app-flame.vercel.app/",
   },
 ];
 
@@ -140,19 +151,19 @@ export const infoList = [
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "B.Tech in Chemical Engineering",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 5 projects",
+    description: "Built more than 10 live projects",
   },
 ];
 
 export const toolsData = [
   assets.vscode,
-  assets.firebase,
+  /*  assets.firebase, */
   assets.mongodb,
   assets.figma,
   assets.git,
