@@ -145,19 +145,20 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    description:
+      "HTML, CSS, JavaScript, TypeScript, React Js, Next Js, Php, Laravel",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Chemical Engineering",
+    description: "B.Eng in Chemical Engineering",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 10 live projects",
+    description: "Built over 10 live projects",
   },
 ];
 
