@@ -54,7 +54,7 @@ const AboutMe = ({ isDark }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl">
-            I am an experienced Frontend Developer with over a 3years of
+            I am an experienced Frontend Developer with over 4years of
             professional expertise in the field. Throughout my career, I have
             had the privilege of collaborating with prestigious organizations,
             contributing to their success and growth.

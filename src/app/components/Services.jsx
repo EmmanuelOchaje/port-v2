@@ -1,5 +1,5 @@
 import React from "react";
-import { assets, serviceData } from "../../../assets/assets";
+import { assets, services } from "../../../assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
@@ -36,13 +36,13 @@ const Services = ({ isDark }) => {
         transition={{ duration: 0.8, delay: 0.6 }}
         className="grid grid-cols-auto gap-6 my-10"
       >
-        {serviceData.map(({ icon, title, description, link }, index) => (
+        {services.map(({ icon, title, description, link }, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="aspect-square border border-gray-400 rounded-lg p-5 hover:bg-lightHover cursor-pointer hover:-translate-y-1 duration-500 dark:hover:bg-blue-950"
             key={index}
           >
-            <Image src={icon} alt={title} className="w-10" />
+            <Image src={icon} alt={title} className="w-6" />
             <h3 className="text-lg my-4 text-gray-700 dark:text-white">
               {title}
             </h3>
@@ -50,7 +50,7 @@ const Services = ({ isDark }) => {
               {description}
             </p>
 
-            <Link href={link} className="flex items-center gap-2 text-sm mt-5">
+            <Link href={"/"} className="flex items-center gap-2 text-sm mt-5">
               Read More{" "}
               <Image src={assets.right_arrow} alt="" className="w-4" />
             </Link>

@@ -39,6 +39,17 @@ import konjaa from "../assets/konjaa.png";
 import luxedrive from "../assets/luxedrive.png";
 import dcribs from "../assets/dcribs.png";
 import foods from "../assets/foods.png";
+import display from "../assets/display.png";
+import layout from "../assets/layout.png";
+import plug from "../assets/plug.png";
+import spaceTourism from "../assets/space-tourism.png";
+import tesla from "../assets/tesla.png";
+import room from "../assets/room.png";
+import learnFlow from "../assets/learn-flow.png";
+import loopstudio from "../assets/loopstudio.png";
+import sneaker from "../assets/sneaker.png";
+import zap from "../assets/zap.png";
+import news from "../assets/news.png";
 
 export const assets = {
   user_image,
@@ -78,65 +89,118 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
-  konjaa,
   luxedrive,
-  dcribs,
-  foods,
+  spaceTourism,
+  sneaker,
+  tesla,
+  loopstudio,
+  learnFlow,
+  room,
+  news,
+  zap,
+  display,
+  layout,
+  plug,
 };
 
 export const workData = [
   {
+    title: "Learn Flow",
+    description:
+      "A Web3Bridge challenge — an e-learning platform UI with course listings, categorized content, and a clean dashboard layout designed for an intuitive learning experience.",
+    bgImage: assets.learnFlow,
+    href: "/",
+    github: "https://github.com/EmmanuelOchaje/Elearning-platform-web2A",
+    stack: ["React", "Tailwind CSS", "JavaScript"],
+  },
+  {
+    title: "Room Interior Decoration",
+    description:
+      "A Frontend Mentor challenge — an interior decoration landing page with a sliding hero gallery, grid-based room showcases, and a minimal, furniture-forward aesthetic.",
+    bgImage: assets.room,
+    href: "https://room-homepage-ftm.vercel.app/",
+    github: "https://github.com/EmmanuelOchaje/room-homepage-FTM",
+    stack: ["React", "Tailwind CSS", "JavaScript"],
+  },
+  {
+    title: "Tesla Clone",
+    description:
+      "A Web3Bridge challenge — a pixel-perfect Tesla website clone showcasing smooth scroll sections, full-screen hero images, and responsive layout across all screen sizes.",
+    bgImage: assets.tesla,
+    href: "https://tesla-clone-web2-a.vercel.app/",
+    github: "https://github.com/EmmanuelOchaje/tesla-clone-web2A",
+    stack: ["Next.js", "Tailwind CSS", "JavaScript"],
+  },
+  {
+    title: "Sneakers",
+    description:
+      "A Frontend Mentor challenge — an e-commerce product page with a lightbox image gallery, quantity selector, cart functionality, and a fully responsive mobile layout.",
+    bgImage: assets.sneaker,
+    href: "https://product-page-ftm.vercel.app/",
+    github: "https://github.com/EmmanuelOchaje/ecom-product-page-FTM",
+    stack: ["Next.js", "Tailwind CSS", "JavaScript"],
+  },
+  {
     title: "Car Rental",
-    description: "Web Design",
+    description:
+      "A modern car rental platform where users can browse available vehicles, view details, and book rides through a clean, responsive interface.",
     bgImage: assets.luxedrive,
     href: "https://car-rentalv2.vercel.app/",
+    github: "https://github.com/EmmanuelOchaje/car-rental",
+    stack: ["Next.js", "Tailwind CSS", "JavaScript"],
   },
   {
-    title: "D-cribs Real Estate",
-    description: "Web Design",
-    bgImage: assets.dcribs,
-    href: "https://m-d-cribs.vercel.app/",
+    title: "News Homepage",
+    description:
+      "A Frontend Mentor challenge — a news homepage with a featured article layout, trending sidebar, and fully responsive grid built with semantic HTML.",
+    bgImage: assets.news,
+    href: "https://news-homepage-ftm.vercel.app/",
+    github: "https://github.com/EmmanuelOchaje/news-homepage-FTM",
+    stack: ["React", "Tailwind CSS", "JavaScript"],
   },
   {
-    title: "Konjaa POS",
-    description: "Web Design",
-    bgImage: assets.konjaa,
-    href: "https://konjaa.vercel.app/",
+    title: "Space Tourism",
+    description:
+      "A Frontend Mentor challenge — a multi-page space tourism website featuring tabbed navigation for destinations, crew, and technology sections.",
+    bgImage: assets.spaceTourism,
+    href: "https://space-tourism-ftm-theta.vercel.app/",
+    github: "https://github.com/EmmanuelOchaje/space-tourism-FTM",
+    stack: ["React", "Tailwind CSS", "JavaScript"],
   },
   {
-    title: "Food App",
-    description: "UI/UX Design",
-    bgImage: assets.foods,
-    href: "https://foodies-app-flame.vercel.app/",
+    title: "Loop Studio",
+    description:
+      "A Frontend Mentor challenge — a creative agency landing page with bold typography, an animated mobile navigation menu, and a strong visual hierarchy.",
+    bgImage: assets.loopstudio,
+    href: "https://loopstudio-ftm.vercel.app/",
+    github: "https://github.com/EmmanuelOchaje/Loopstudio-FTM",
+    stack: ["React", "Tailwind CSS", "JavaScript"],
   },
 ];
-
-export const serviceData = [
+export const services = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    title: "Frontend Development",
+    icon: display,
     description:
-      "Mobile app development involves creating software for mobile devices...",
-    link: "",
+      "Building fast, responsive web applications with React and Next.js, from component architecture to deployment.",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    title: "UI Implementation",
+    icon: layout,
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
+      "Translating Figma or design mockups into pixel-perfect interfaces using HTML, CSS, and Tailwind CSS.",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
+    title: "Web Performance",
+    icon: zap,
+    description:
+      "Optimizing Core Web Vitals, load times, and overall frontend performance for better user experience.",
+  },
+  {
+    title: "API Integration",
+    icon: plug,
+    description:
+      "Connecting frontends to REST APIs and backend services, with clean data handling and error states.",
   },
 ];
 

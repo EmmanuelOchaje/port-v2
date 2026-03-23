@@ -41,7 +41,7 @@ const Header = ({ isDark }) => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="font-Ovo"
         >
-          I am a frontend Developer from Nigeria, with 5years of experience in
+          I am a frontend Developer from Nigeria, with 4years of experience in
           multiple establishments.
         </motion.p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
