@@ -109,7 +109,7 @@ export const workData = [
     description:
       "A Web3Bridge challenge — an e-learning platform UI with course listings, categorized content, and a clean dashboard layout designed for an intuitive learning experience.",
     bgImage: assets.learnFlow,
-    href: "/",
+    href: "https://elearning-platform-web2a.vercel.app/",
     github: "https://github.com/EmmanuelOchaje/Elearning-platform-web2A",
     stack: ["React", "Tailwind CSS", "JavaScript"],
   },
